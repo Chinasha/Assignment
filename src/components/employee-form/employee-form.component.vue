@@ -101,7 +101,6 @@ export default {
             "setEmployeeData",
             JSON.stringify(intialEmployeeData)
           );
-          this.showForm = false;
           this.employeeForm = {
             id: "",
             name: "",
@@ -110,7 +109,7 @@ export default {
             mobile: "",
             responsibility: ""
           };
-          this.showForm = true;
+          this.$validator.reset();
         }
       });
     }
